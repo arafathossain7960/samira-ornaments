@@ -1,0 +1,13 @@
+.banner{
+    height: 400px;
+    background-image: url('../../../images/banner/banner1\,png.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-contain{
+    font-size: 60px;
+    color:goldenrod;
+    font-weight: bolder;
+}

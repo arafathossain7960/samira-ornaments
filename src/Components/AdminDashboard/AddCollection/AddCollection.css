@@ -1,0 +1,12 @@
+.addNewCollection{
+    padding: 10px 20px;
+    
+}
+.addNewCollection input{
+    width: 50%;
+    padding: 5px 8px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 1px solid yellowgreen;
+}

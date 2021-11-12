@@ -1,0 +1,20 @@
+.admin-head-bg{
+    color: yellow ;
+    background-color: rgba(40, 47, 9, 0.438);
+}
+.admin-menu-bg{
+    background-color: rgba(40, 47, 9, 0.616);
+    text-align: center;
+    color: white;
+    padding: 0 5px;
+    height: 600px;
+}
+.admin-menu-bg a{
+    text-decoration: none;
+    color:white;
+
+}
+.admin-menu-bg a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
