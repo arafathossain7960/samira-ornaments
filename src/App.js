@@ -50,7 +50,7 @@ function App() {
     <Route path='/register'>
       <Register></Register>
     </Route>
-
+   
      </Switch>
      <Footer></Footer>
     </Router> 

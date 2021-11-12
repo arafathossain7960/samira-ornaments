@@ -23,7 +23,8 @@ const MyOrders = () => {
                     <th>Item Name</th>
                     <th>Price</th>
                     <th>Email</th>
-                    <th>Approve/delete</th>
+                    <th>Status</th>
+                    <th>Cancel order</th>
                 </tr>
             </thead>
             <tbody>

@@ -7,7 +7,14 @@
 }
 
 .banner-contain{
-    font-size: 60px;
+    padding: 100px 0 0 80px;
     color:goldenrod;
-    font-weight: bolder;
+}
+.banner-btn{
+    border: 1px solid goldenrod;
+    border-radius: 0.5px;
+    color: white;
+}
+.banner-btn:hover{
+    color: goldenrod;
 }

@@ -1,0 +1,7 @@
+.sReviews{
+    display: flex;
+    justify-content: center;
+}
+.review-start{
+   color: goldenrod;
+}

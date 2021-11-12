@@ -9,8 +9,8 @@ const SingleProduct = ({ornament}) => {
   
     return (
         <div className="col-xm-12 col-sm-4 col-md-4 col-lg-4" >
-        <Card >
-         <Card.Img style={{width:'120px', hight:'150px'}} variant="top" src={imgUrl} />
+        <Card className="pds-card">
+         <Card.Img className="pds-img" style={{width:'200px', hight:'200px', textAlign:'center'}} variant="top" src={imgUrl} />
         <Card.Body>
         <Card.Title>{ornamentName}</Card.Title>
         <Card.Text>
@@ -20,7 +20,7 @@ const SingleProduct = ({ornament}) => {
         {description}
         </Card.Text>
         <Link path to={`/placeOrder/${_id}`}>
-        <Button variant="primary" >Buy Now</Button>
+        <Button className="btn deal-btn"  >Buy Now</Button>
         </Link>
        
          </Card.Body>

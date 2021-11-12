@@ -49,7 +49,7 @@ const Review = () => {
      <br />
       
       
-      <input onClick={() => reset()} className="btn btn-info text-light" type="submit" />
+      <input className="btn btn-info text-light" type="submit" />
     </form>
             </div>
             <div className="col-xm-12 col-sm-12 col-md-6 col-lg-6">

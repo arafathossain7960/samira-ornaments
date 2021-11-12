@@ -10,9 +10,9 @@ const Products = () => {
         .then(data =>setOrnaments(data.slice(0,6)) )
     },[])
     return (
-        <div className="container mt-5">
+        <div className="container mt-5 pt-3">
             <div className="text-center mx-5 px-5">
-                <h3>Featured Products</h3>
+                <h3 className="pd-heading">Featured Products</h3>
                 <p>Sound G3 gives you music non-stop for up to 10 hours on one battery
 charge enough for a party. And there’s no need to switch it off.</p>
             </div>

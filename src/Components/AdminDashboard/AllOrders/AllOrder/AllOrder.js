@@ -2,7 +2,7 @@ import React from 'react';
 
 import './AllOrder.css';
 
-const AllOrder = ({order, setLoadingDelete}) => {
+const AllOrder = ({order, setLoadingDelete, setUpdateLoading}) => {
     const  {_id, email, ornamentName, price, status}=order;
     // Update status function
     const handleUpdateStatus=id=>{
@@ -10,7 +10,13 @@ const AllOrder = ({order, setLoadingDelete}) => {
             method:"PUT"
         })
         .then(res => res.json())
-        .then(data =>{})
+        .then(data =>{
+            if( data.modifiedCount>0){
+                setUpdateLoading(true);
+            }else{
+                setUpdateLoading(false)
+            }
+        })
     }
 
     // Delete function
@@ -39,7 +45,15 @@ const AllOrder = ({order, setLoadingDelete}) => {
              <td>{ornamentName}</td>
              <td>{price}</td>
              <td>{email}</td>
-             <td><button className="btn btn-primary" onClick={()=>handleUpdateStatus(_id)} >{status}</button> 
+             <td>
+               {
+                  status==="pending"? <button className="btn btn-warning" onClick={()=>handleUpdateStatus(_id)} >{status}</button>
+                  : <button className="btn btn-primary">{status}</button>
+
+               }  
+
+               </td>  
+             <td>
              <button className="btn btn-danger" onClick={()=>handleOrderDelete(_id)}>Delete</button>  </td>
          </tr> 
          </>

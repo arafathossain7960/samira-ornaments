@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './UserInfo.css';
 
 const UserInfo = () => {
+    
     return (
         <div>
             <h2>this is user</h2>

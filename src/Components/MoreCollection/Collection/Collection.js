@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Collection = ({ornament}) => {
-    const {_id, ornamentName, description, imgUrl}=ornament;
+    const {_id, ornamentName,price, description, imgUrl}=ornament;
     return (
         <div className="col-xm-12 col-sm-4 col-md-4 col-lg-4" >
         <Card >
@@ -12,10 +12,13 @@ const Collection = ({ornament}) => {
         <Card.Body>
         <Card.Title>{ornamentName}</Card.Title>
         <Card.Text>
+       $ {price}
+        </Card.Text>
+        <Card.Text>
         {description}
         </Card.Text>
         <Link path to={`/placeOrder/${_id}`}>
-        <Button variant="primary" >Buy Now</Button>
+        <Button className="btn deal-btn" >Buy Now</Button>
         </Link>
        
          </Card.Body>

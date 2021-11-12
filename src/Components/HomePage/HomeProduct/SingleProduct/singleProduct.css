@@ -1,1 +1,10 @@
- 
+ .pds-img:hover{
+width: 210px;
+height: 210px;
+ }
+ .pds-img{
+    transition: 1s;
+ }
+ .pds-card{
+     
+ }

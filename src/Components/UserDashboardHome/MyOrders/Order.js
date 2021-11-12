@@ -32,8 +32,17 @@ const Order = ({order, setLoadingDelete}) => {
              <td>{price}</td>
              <td>{email}</td>
                  <td>
-                     <button type="submit">{status}</button>
-                     <button onClick={()=>handleMyOrderDelete(_id)} className="btn btn-danger" type="submit">Delete</button>
+                     {
+                         status==="Approve"?<button className="btn btn-primary">{status}</button>
+                         :<button className="btn btn-warning">{status}</button>
+                        
+                     }
+                    
+                    
+                </td>
+                 <td>
+                     
+                     <button onClick={()=>handleMyOrderDelete(_id)} className="btn btn-danger" type="submit">Cancel</button>
              
                 </td>
          </tr> 

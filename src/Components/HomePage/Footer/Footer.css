@@ -1,0 +1,9 @@
+.footer-contain p:hover{
+    color: goldenrod;
+    text-decoration: underline;
+
+}
+span{
+    font-size: 11px;
+    color: goldenrod;
+}

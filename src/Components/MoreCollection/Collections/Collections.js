@@ -10,7 +10,8 @@ const Collections = () => {
         .then(data =>setOrnaments(data) )
     },[])
     return (
-        <div className="row">
+        <div className="container">
+        <div className="row ">
             {
                 ornaments.map(ornament =><Collection
                 key={ornament._id}
@@ -19,6 +20,9 @@ const Collections = () => {
                 ></Collection>)
             }
         </div>
+        </div>
+
+        
     );
 };
 

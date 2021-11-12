@@ -1,0 +1,25 @@
+
+.deal-contain{
+    text-align: right;
+   
+}
+.deal-text{
+    border-right: 2px solid goldenrod;
+}
+.deal-heading{
+    color: goldenrod;
+}
+.deal-btn{
+    background-color: goldenrod;
+    color: white;
+}
+.deal-btn:hover{
+    background-color: gold;
+}
+
+.deal-img{
+text-align: center;
+}
+.deal-img img{
+    height: 370px;
+}
