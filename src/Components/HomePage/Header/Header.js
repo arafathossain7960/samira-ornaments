@@ -32,7 +32,7 @@ const Header = () => {
       }
      
       {
-     user?.email &&  <Nav.Link as={Link} to='admin'>Admin</Nav.Link>
+     user?.email && adminUser?.role &&  <Nav.Link as={Link} to='admin'>Admin</Nav.Link>
       }
    
       {
