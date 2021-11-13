@@ -17,6 +17,7 @@ const MyOrders = () => {
     return (
         <div className="container">
             <div className="row">
+                <div className="text-center py-2"><h3>My orders table</h3></div>
             <Table striped bordered hover size="sm">
             <thead>
                 <tr>

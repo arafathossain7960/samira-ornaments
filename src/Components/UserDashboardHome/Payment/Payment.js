@@ -3,8 +3,9 @@ import './Payment.css';
 
 const Payment = () => {
     return (
-        <div>
-            <h1>This is a payment option are comming soon</h1>
+        <div className="container text-center py-3">
+            <h3>This is the payment field</h3>
+            <p>The payment method will be coming soon!</p>
         </div>
     );
 };

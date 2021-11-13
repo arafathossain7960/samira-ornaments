@@ -1,4 +1,6 @@
 import React from 'react';
+import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Banner.css';
 
 const Banner = () => {
@@ -10,7 +12,9 @@ const Banner = () => {
                   <h1>  your next function</h1>
                 <p>We are promising to you,
                we will give you the world best jewellery</p>
-               <button className="btn banner-btn">Read More</button>
+
+               
+               <button className="btn banner-btn"><Nav.Link as={Link} to='/moreCollection'>Read More</Nav.Link></button>
             </div>
         </div>
     );

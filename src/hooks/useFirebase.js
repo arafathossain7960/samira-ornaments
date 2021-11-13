@@ -6,6 +6,7 @@ initializedAuthentication();
 const useFirebase=()=>{
     const [user, setUser]=useState({});
     const [error, setError]=useState('');
+    const [createAccount,setCreateAccount]=useState('');
     const [isLoading, setIsLoading]=useState(true);
     const auth = getAuth();
 const createUserWithEmailPassword=(email, password, name, role)=>{
@@ -79,6 +80,12 @@ const postUserOnDatabase=( email, name,  role)=>{
       },
       body:JSON.stringify(user)
     })
+    .then(res =>res.json())
+    .then(data =>{
+      if(data.insertedId){
+        setCreateAccount('Account has been successfully created')
+      }
+    })
   
 }
 
@@ -86,6 +93,7 @@ return{
     user,
     error,
     isLoading,
+    createAccount,
     createUserWithEmailPassword,
     logoutUser,
     signInUserWithEmailPassword

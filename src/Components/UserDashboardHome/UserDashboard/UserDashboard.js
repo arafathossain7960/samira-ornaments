@@ -27,7 +27,7 @@ const UserDashboard = () => {
         <div className="col-2 admin-menu-bg">
             <h4>Menubar</h4>
           
-            {/* <p><Link to={`${url}/userInfo`}>UserInfo</Link></p> */}
+            <p><Link to={`${url}/`}>UserInfo</Link></p>
             <p><Link to={`${url}/myOrders`}>My Orders</Link></p>
             <p><Link to={`${url}/payment`}>Payment History</Link></p>
             <p><Link to={`${url}/review`}>Add Review</Link></p>
@@ -45,9 +45,9 @@ const UserDashboard = () => {
              <Route  path={`${path}/review`}>
              <Review></Review>
              </Route>
-             {/* <Route  path={`${path}/userInfo`}>
+             <Route  path={`${path}/`}>
              <UserInfo></UserInfo>
-             </Route> */}
+             </Route>
              
        
       </Switch>

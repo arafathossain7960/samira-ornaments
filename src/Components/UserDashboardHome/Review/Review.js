@@ -1,7 +1,7 @@
 import React from 'react';
 import './Review.css';
 import { useForm } from "react-hook-form";
-import review from '../../../images/review/review.png';
+import review from '../../../images/review/review2.png';
 
 
 const Review = () => {
@@ -32,31 +32,32 @@ const Review = () => {
    
     
  return (
-    <div className="container">
+    <div className="container py-5">
         <div className="row my-3 py-2">
-            <div className="col-xm-12 col-sm-12 col-md-6 col-lg-6">
-                <div className="text-center"><h4>Add your review</h4></div>
+        <div className="col-xm-12 col-sm-12 col-md-6 col-lg-6">
+    <div className="addReview text-center ">
 
-
-         <form onSubmit={handleSubmit(onSubmit)}>
-     
+    
+      <div className="text-center"><h3>Add your review</h3></div>
+     <form onSubmit={handleSubmit(onSubmit)}>
       <input type='text' {...register("name", {required: true})}  />
       <br />
-    
       <textarea type="text" {...register("comments", { required: true })} placeholder="Enter comment here" />
       <br />
       <input type="text" {...register("star", { required: true })} placeholder="Enter your Review 1-5" />
      <br />
-      
-      
-      <input className="btn btn-info text-light" type="submit" />
+      <input className="btn deal-btn" type="submit" />
     </form>
-            </div>
-            <div className="col-xm-12 col-sm-12 col-md-6 col-lg-6">
-                <img style={{height:'200px', }} src={review} alt="" />
-            </div>
-        </div>
+     </div>
+     </div>
+
+     <div className="col-xm-12 col-sm-12 col-md-6 col-lg-6">
+          <div className="text-center mt-3"  >
+          <img style={{height:'300px', }} src={review} alt="" />
+          </div>
+         </div>
     </div>
+ </div>
     );
 };
 

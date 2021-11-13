@@ -43,7 +43,7 @@ const PlaceOrder = () => {
     return (
         <div className="container my-5 text-center">
        
-            <div><h2  className="text-info"> Your Special order</h2>
+            <div><h2  className="placeOrder-title"> Your Special order</h2>
             <p className="px-5 mx-5">The Supplier Purchase Summary report lists the numbers and amount of orders you have placed with various suppliers during a particular period</p>
             </div>
     <div className='row'>
@@ -56,7 +56,7 @@ const PlaceOrder = () => {
       <br />
       <input type="text" defaultValue={oneProduct?.description} {...register("description", { required: true })} />
       <br />
-      <input onClick={() => reset()} className="btn btn-info text-light" type="submit" />
+      <input  className="btn deal-btn" type="submit" />
      </form>
      </div>
      <div className="col-xm-12 col-sm-12 col-md-6 col-lg-6 text-center ">

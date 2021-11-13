@@ -18,6 +18,7 @@ const AllOrders = () => {
     return (
         <div className="container">
             <div className="row">
+                <div className="text-center py-1"><h3>Order table</h3> </div>
             <Table striped bordered hover size="sm">
             <thead>
                 <tr>

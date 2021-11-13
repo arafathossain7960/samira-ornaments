@@ -31,15 +31,15 @@ function App() {
     <Route path="/home">
       <Home></Home>
     </Route>
-    <Route path="/placeOrder/:id">
+    <PrivetRoute path="/placeOrder/:id">
     <PlaceOrder></PlaceOrder>
-    </Route>
+    </PrivetRoute>
     <Route path="/moreCollection">
       <Collections></Collections>
     </Route>
-    <Route path='/userDashboard'>
+    <PrivetRoute path='/userDashboard'>
       <UserDashboard></UserDashboard>
-    </Route>
+    </PrivetRoute>
     <PrivetRoute path='/admin'>
       <AdminDashboardHome></AdminDashboardHome>
     </PrivetRoute>

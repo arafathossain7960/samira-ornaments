@@ -4,8 +4,8 @@ import './UserInfo.css';
 const UserInfo = () => {
     
     return (
-        <div>
-            <h2>this is user</h2>
+        <div className="container text-center py-3">
+            <h3>This field for user</h3>
             
 
         </div>

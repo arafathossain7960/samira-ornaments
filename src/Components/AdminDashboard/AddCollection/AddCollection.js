@@ -42,7 +42,7 @@ const AddCollection = () => {
       <br />
       <input type="text" {...register("description", { required: true })} placeholder="Enter short description" />
       <br />
-      <input onClick={() => reset()} className="btn btn-info text-light" type="submit" />
+      <input  className="btn deal-btn" type="submit" />
      </form>
      </div>
     </div>
