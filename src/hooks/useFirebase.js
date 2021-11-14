@@ -8,6 +8,7 @@ const useFirebase=()=>{
     const [error, setError]=useState('');
     const [createAccount,setCreateAccount]=useState('');
     const [isLoading, setIsLoading]=useState(true);
+    const [admin, setAdmin]=useState(false);
     const auth = getAuth();
 const createUserWithEmailPassword=(email, password, name, role)=>{
     setIsLoading(true);
@@ -89,8 +90,14 @@ const postUserOnDatabase=( email, name,  role)=>{
   
 }
 
+useEffect(()=>{
+  fetch(`https://afternoon-river-42961.herokuapp.com/users/${user.email}`)
+  .then(res =>res.json())
+  .then(data => setAdmin(data))
+},[user?.email])
 return{
     user,
+    admin,
     error,
     isLoading,
     createAccount,

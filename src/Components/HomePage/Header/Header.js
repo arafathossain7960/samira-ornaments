@@ -5,23 +5,16 @@ import useAuth from '../../../hooks/useAuth';
 
 
 const Header = () => {
-  const [adminUser, setAdminUser]=useState({});
-  const {user}=useAuth();
+  
+  const {user, admin}=useAuth();
+  console.log(admin)
 
-  useEffect(()=>{
-    if(user.email){
-    const email= user?.email;
-    const url = `https://afternoon-river-42961.herokuapp.com/users/${email}`;
-    fetch(url)
-    .then(res => res.json())
-    .then(data =>setAdminUser(data))
+
     
-  }
-  },[]);
 
 
  
-console.log(adminUser)
+
  
     return (
         <>
@@ -40,8 +33,10 @@ console.log(adminUser)
       }
      
       {
-     adminUser?.role &&  <Nav.Link as={Link} to='admin'>Admin</Nav.Link>
+        admin && <Nav.Link as={Link} to='admin'>Admin</Nav.Link>
       }
+
+      
    
       { 
          user?.email? <Nav.Link as={Link} to='userDashboard'><p className='text-light text-right'>{user.email}</p></Nav.Link>
