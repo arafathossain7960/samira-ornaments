@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+### welcome to Samira Ornaments Collection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Samira Ornaments Live site link [click](https://samira-ornaments.web.app/).
 
-## Available Scripts
+## About Samira Ornaments 
+<p>
+Samira Ornaments is a startup website based on Jewelry collection, We are selling most popular designed, we have 120 design stock and 5000 pice in our stock, We want try to give you world best design.
+</p>
 
-In the project directory, you can run:
+## An Offer you "Buy 2 Get 1".
+<p>
+If you buy any 2 ornament from samira ornaments collection on 12/12/2021 you can get 1 special jewelry items. So go our site get offer [visit](https://samira-ornaments.web.app/)
+</p>
 
-### `yarn start`
+## Samira ornaments use rules
+<p>
+If you are a normal visitor you can see our home page and moreCollection page totally free of cost, but if you want to order any ornaments yoy must create register on our website. then you can access so many features like user dashboard, your orders, add review option etc. You also cancel your order form myOrder page. 
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About the website functionalities
+# Authentication 
+1. Register with email and password
+2. Login with email and password
+# Make admin
+# Order add or delete 
+# Add new collection By Admin
+# Cancel order by admin
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Resources 
+1. HTML
+2. CSS
+3. Bootstrap
+4. JavaScript
+5. React js
+6. Node js
+7. express
+8. Mongodb
+9. Firebase
+10. Heroku
 
-### `yarn test`
+## Author
+# MD ARAFAT HOSSAIN 
+<p>Student of programming-hero.com</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
