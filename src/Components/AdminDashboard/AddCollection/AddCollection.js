@@ -13,7 +13,7 @@ const AddCollection = () => {
         const description=data.description;
         const price= data.price;
         const ornament ={ornamentName, imgUrl,price, description};
-        fetch('http://localhost:5000/addCollection',{
+        fetch('https://afternoon-river-42961.herokuapp.com/addCollection',{
             method:"POST",
             headers:{'content-type':'application/json'},
             body:JSON.stringify(ornament)

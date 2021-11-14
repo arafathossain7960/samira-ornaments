@@ -6,7 +6,7 @@ const Order = ({order, setLoadingDelete}) => {
     const handleMyOrderDelete=id=>{
         const proceed=window.confirm('Are you sure you want ot delete the order?');
         if(proceed){
-        fetch(`http://localhost:5000/myOrderDelete/${id}`,{
+        fetch(`https://afternoon-river-42961.herokuapp.com/myOrderDelete/${id}`,{
             method:"DELETE"
         })
         .then(res =>res.json())

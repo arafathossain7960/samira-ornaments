@@ -11,7 +11,7 @@ const PlaceOrder = () => {
     const {id}=useParams();
 
     useEffect(()=>{
-        const url = `http://localhost:5000/ornaments/${id}`
+        const url = `https://afternoon-river-42961.herokuapp.com/ornaments/${id}`
         fetch(url)
         .then(res =>res.json())
         .then(data =>setOneProduct(data))
@@ -28,7 +28,7 @@ const PlaceOrder = () => {
         const item ={email, ornamentName, price, status, imgUrl, description};
         
         // post data to database
-        fetch('http://localhost:5000/orders', {
+        fetch('https://afternoon-river-42961.herokuapp.com/orders', {
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(item)

@@ -16,7 +16,7 @@ const Review = () => {
         const star = data.star;
         const reviews = { name, review, star};
         console.log(reviews)
-        fetch('http://localhost:5000/reviews',{
+        fetch('https://afternoon-river-42961.herokuapp.com/reviews',{
             method:"POST",
             headers:{'content-type':'application/json'},
             body:JSON.stringify(reviews)
@@ -40,7 +40,7 @@ const Review = () => {
     
       <div className="text-center"><h3>Add your review</h3></div>
      <form onSubmit={handleSubmit(onSubmit)}>
-      <input type='text' {...register("name", {required: true})}  />
+      <input type='text' {...register("name", {required: true})} placeholder="Enter Name"  />
       <br />
       <textarea type="text" {...register("comments", { required: true })} placeholder="Enter comment here" />
       <br />

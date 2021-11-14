@@ -7,7 +7,7 @@ const [displayReviews, setDisplayReviews]=useState([]);
 
 
 useEffect(()=>{
-    fetch('http://localhost:5000/reviews')
+    fetch('https://afternoon-river-42961.herokuapp.com/reviews')
     .then(res => res.json())
     .then(data =>setDisplayReviews(data))
 },[])

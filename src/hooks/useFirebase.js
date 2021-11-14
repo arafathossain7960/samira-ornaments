@@ -73,7 +73,7 @@ const logoutUser=()=>{
 const postUserOnDatabase=( email, name,  role)=>{
   const user={name:name, email:email, role:role}
   
-    fetch('http://localhost:5000/users',{
+    fetch('https://afternoon-river-42961.herokuapp.com/users',{
       method:"POST",
       headers:{
         'content-type':'application/json'

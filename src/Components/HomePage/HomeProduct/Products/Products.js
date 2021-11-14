@@ -5,7 +5,7 @@ import './Products.css';
 const Products = () => {
     const [ornaments, setOrnaments]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/ornaments')
+        fetch('https://afternoon-river-42961.herokuapp.com/ornaments')
         .then(res => res.json())
         .then(data =>setOrnaments(data.slice(0,6)) )
     },[])

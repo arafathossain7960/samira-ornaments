@@ -9,7 +9,7 @@ const MyOrders = () => {
     const [myOrders, setMyOrders]=useState([]);
     const [loadingDelete, setLoadingDelete]=useState(false);
     useEffect(()=>{
-        const url=`http://localhost:5000/myOrders/${user.email}`
+        const url=`https://afternoon-river-42961.herokuapp.com/myOrders/${user.email}`
         fetch(url)
         .then(res =>res.json())
         .then(data => setMyOrders(data))

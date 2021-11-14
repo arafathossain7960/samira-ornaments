@@ -6,7 +6,7 @@ const AllOrder = ({order, setLoadingDelete, setUpdateLoading}) => {
     const  {_id, email, ornamentName, price, status}=order;
     // Update status function
     const handleUpdateStatus=id=>{
-        fetch(`http://localhost:5000/updateStatus/${id}`,{
+        fetch(`https://afternoon-river-42961.herokuapp.com/updateStatus/${id}`,{
             method:"PUT"
         })
         .then(res => res.json())
@@ -23,7 +23,7 @@ const AllOrder = ({order, setLoadingDelete, setUpdateLoading}) => {
     const handleOrderDelete=id=>{
         const proceed = window.confirm('Are you sure the order is delete?');
         if(proceed){
-            fetch(`http://localhost:5000/orderDelete/${id}`,{
+            fetch(`https://afternoon-river-42961.herokuapp.com/orderDelete/${id}`,{
                 method:"DELETE"
             })
             .then(res =>res.json())
